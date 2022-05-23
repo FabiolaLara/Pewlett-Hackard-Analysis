@@ -9,3 +9,15 @@ The idea is to know the way this Company will be affected in their different dep
 The idea in this analysis is also, filter data in order to know the people who is working in their latest title field, due many people have changed of title.
 
 # Results:
+1. Using DISTINCT ON is one of the most useful command in SQL  because it will filter our columns where we want to know non repited rows, so in this case as we wanted to know the employee that is working now, the data base provided a date to know which employees are active at this moment, this date can be weird but it was established as (9999-01-01), so all people who have the column "to_date" into that date means is an active worker.
+2. Another result with a lot of meaning is to know the number of employees who are practically retired due their title, this value could define the situation of the Company if they dont have those workers. Previously, we need to know how many of these are no employees anymore, throught filtering the mentioned before, those who are active workers.
+3. Other command tool with a hight relevance is the use of JOIN, wen we join our tables, we are making our analysis more explicit, so we can create new tables and discover value info. For example whe we join Employes table and Dept_emp table we create a bridge with Departments at the same time, let me explain: Dept_emp has one column with a PK so if we join Employees and Dept_name we wiil get the info for both tables, and as Departments has also a PK with the same name than Dept_emp, we can join this third table (Departments) with Employees and Dept_emp. There are differet ways to use join like: right, left, and inner join principally.
+4. Another command used in this analysis where "WHERE", "GROPU BY", "ORDER BY", "AND", "IN", basically, there are some more, but for this analysis these we nornally used. These commands help us to make queries with specific data requested, so if we use WHERE for example we are saying that we need values where the condition is true, and we can create many condiction usind AND, or OR, etc. At the same time it is important to order our query results, we have GROUP BY which order the info for each group of different rows, and ORDER BY will order our info in DESC or ASC order, this makes an easy understanding for people.
+
+# SUMMARY
+
+* How many roles will need to be filled as the "silver tsunami" begins to make an impact?
+According with the query, there are 1549 people that will be needed. These people were the ones who were born during all the 1965 year.
+
+* Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
+I consider there are, or also about the queries is says that there are many people who is working in the different titles areas, for example the total amount of active people is about 73,000 , from those just 1549 will be in the mentor ship program. So Icould say there are enought people to mentor the new generation of Pewlett Hackard.
