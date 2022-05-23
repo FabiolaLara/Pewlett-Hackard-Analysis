@@ -17,7 +17,18 @@ The idea in this analysis is also, filter data in order to know the people who i
 # SUMMARY
 
 * How many roles will need to be filled as the "silver tsunami" begins to make an impact?
-According with the query, there are 1549 people that will be needed. These people were the ones who were born during all the 1965 year.
+According with the query, there are about 72,000 people that is candidate to retire in the Company, because they are people who have the to_date = '9999-01-01',so, those means that they are active in the Company. The ones that remain in the Company are about : 134,000, when we filter them saying that those who have theto_date = '9999-01-01' are about almost the same number of those who are not in the Company.
+
+The query which says there the amount of people is in the Company  is:
+
+SELECT count (title) AS count
+FROM unique_titles; --> 72,458
 
 * Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
 I consider there are, or also about the queries is says that there are many people who is working in the different titles areas, for example the total amount of active people is about 73,000 , from those just 1549 will be in the mentor ship program. So Icould say there are enought people to mentor the new generation of Pewlett Hackard.
+
+The next query tells the amount of people consider for mentoring: resulting in 1549.
+
+`SELECT` count (title) AS count
+
+`FROM` unique_titles;
