@@ -21,8 +21,9 @@ According with the query, there are about 72,000 people that is candidate to ret
 
 The query which says there the amount of people is in the Company  is:
 
-SELECT count (title) AS count
-FROM unique_titles; --> 72,458
+`SELECT` count (title) AS count
+
+`FROM` unique_titles; --> 72,458
 
 * Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
 I consider there are, or also about the queries is says that there are many people who is working in the different titles areas, for example the total amount of active people is about 73,000 , from those just 1549 will be in the mentor ship program. So Icould say there are enought people to mentor the new generation of Pewlett Hackard.
